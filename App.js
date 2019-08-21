@@ -1,7 +1,12 @@
 import React from 'react';
 import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
-
+import {createSwitchNavigator, createAppContainer} from 'react-navigation';
 import firebase from 'react-native-firebase';
+import LoadingScreen from './screens/LoadingScreen';
+import LoginScreen from './screens/LoginScreen';
+import DashboardScreen from './screens/DashboardScreen'
+import UserInformationScreen from './screens/UserInformationScreen'
+import SplashScreen from './screens/SplashScreen'
 
 export default class App extends React.Component {
   constructor() {
@@ -18,6 +23,10 @@ export default class App extends React.Component {
   }
 
   render() {
+
+    return <AppNavigator />
+    
+
     return (
       <ScrollView>
         <View style={styles.container}>
@@ -61,6 +70,16 @@ export default class App extends React.Component {
     );
   }
 }
+
+const AppSwitchNavigator = createSwitchNavigator({
+  SplashScreen: SplashScreen,
+  LoadingScreen: LoadingScreen,
+  LoginScreen: LoginScreen,
+  DashboardScreen: DashboardScreen,
+  UserInformationScreen: UserInformationScreen
+}, {initialRouteName: 'SplashScreen'});
+
+const AppNavigator = createAppContainer(AppSwitchNavigator);
 
 const styles = StyleSheet.create({
   container: {
