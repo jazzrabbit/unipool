@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.unitas.unipool;
 
 import android.support.multidex.MultiDexApplication;
 

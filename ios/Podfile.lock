@@ -8,6 +8,8 @@ PODS:
   - Crashlytics (3.13.2):
     - Fabric (~> 1.10.2)
   - Fabric (1.10.2)
+  - Firebase/Analytics (6.3.0):
+    - Firebase/Core
   - Firebase/Auth (6.3.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.1.2)
@@ -182,6 +184,7 @@ PODS:
 DEPENDENCIES:
   - Crashlytics (~> 3.13.2)
   - Fabric (~> 1.10.2)
+  - Firebase/Analytics
   - Firebase/Auth (~> 6.3.0)
   - Firebase/Core (~> 6.3.0)
   - Firebase/Database (~> 6.3.0)
@@ -254,6 +257,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
 
-PODFILE CHECKSUM: 540f9c9b43e250c2337caadac424c09cc8900e2c
+PODFILE CHECKSUM: 10474b76db1f4dbcdf4c4dd6ca2847216aa59fec
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.7.3
